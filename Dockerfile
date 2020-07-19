@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:7.2-fpm-alpine
 
 RUN set -ex && apk --no-cache add postgresql-dev libpng-dev libjpeg-turbo-dev freetype-dev libzip-dev
 

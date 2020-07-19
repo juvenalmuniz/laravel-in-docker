@@ -15,6 +15,8 @@ Esse ambiente possui os seguintes componentes configurados, não sendo necessár
 
 ## Criar um novo projeto laravel
 
+> *Observação* Apague o arquivo `src/delete.me` antes de executar o comando a seguir!
+
 ```bash
 $ docker-compose run --rm composer --prefer-dist create-project laravel/laravel .
 ```
