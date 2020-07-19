@@ -48,6 +48,8 @@ services:
       - ./src:/var/www/html
     ports:
       - "9000:9000"
+    extra_hosts:
+      - "<HOST_NAME:<HOST_IP>"
     networks: 
       - laravel
 
@@ -59,6 +61,8 @@ services:
     user: "1000:1000"
     volumes:
       - ./src:/var/www/html
+    environment: 
+      COMPOSER_MEMORY_LIMIT: -1
     working_dir: /var/www/html
     entrypoint: ['/usr/bin/composer']
     networks: 
